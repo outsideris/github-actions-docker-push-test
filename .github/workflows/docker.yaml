@@ -25,8 +25,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/386
-          push: true
+#          push: true
           tags: |
             ${{ github.repository_owner }}/my-container:latest
             ${{ github.repository_owner }}/my-container:0.3
