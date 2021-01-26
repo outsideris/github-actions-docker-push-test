@@ -26,7 +26,7 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-#          push: true
+          push: true
           tags: |
-            ${{ github.repository_owner }}/my-container:latest
-            ${{ github.repository_owner }}/my-container:0.3
+            ${{ github.repository_owner }}/my-container-test:latest
+            ${{ github.repository_owner }}/my-container-test:${{ env.RELEASE_VERSION }}
